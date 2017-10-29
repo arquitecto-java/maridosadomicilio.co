@@ -1,0 +1,145 @@
+html, body { 
+    height: 100%; width: 100%;
+}
+
+body {
+    /*font-size: 19px;*/
+    background-image: url('https://images-na.ssl-images-amazon.com/images/I/71wl-5bDNNL._SL1010_.jpg');
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #0f2b4e;
+    font-family: 'Myriad Pro';
+}
+
+.layer {
+    background-color: rgba(47, 80, 116, 0.47);
+    height: 100%;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.button {
+    height: 20px;
+    background-color: #0f2b4e;
+    color: white;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+    .button:hover {
+        background-color: #416fa8;
+        color: white;
+    }
+
+    .button:active {
+        background-color: #0f2b4e;
+    }
+
+header {
+    background-color: white;
+    font-weight: bold;
+    /*overflow: hidden;*/
+}
+
+header span {
+    /*background-color: red;*/
+    margin: 10px 0;
+}
+
+header nav {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    font-size: 1.2em;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #254d80;
+    cursor: pointer;
+}
+
+    a:hover {
+        color: #416fa8;
+    }
+
+#logo {
+    font-size: 2em;
+    display: inline-block;
+}
+
+#featured {
+    color: white;
+}
+
+#featured h1 {
+    margin: 70px 0 70px 0;
+}  
+
+#featured li {
+    text-align: right;
+    margin: 10px;
+    font-weight: 500;
+    list-style: none;
+}
+
+#featured h2 {
+    font-weight: normal;
+}
+
+#contact form {
+    width: 200px;
+}
+
+#contact input, #contact .button {
+    display: block;
+    width:  100%;
+    margin: 8px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-style: none;
+}  
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #0f2b4e;
+    padding: 5px 0;
+}
+
+#about {
+    background-color: rgba(252, 252, 252, 0.44);
+    display: block;
+    margin: 50px auto;
+    height: 50%;
+    padding: 50px;
+}
+
+#about p {
+    display: block;
+}
+
+#about .button {
+    display: inline-block;
+    margin: auto;
+}
+
+footer p {
+    margin: 0 auto;
+    display: inline;
+    color: white;
+}
