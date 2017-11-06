@@ -3,8 +3,7 @@ html, body {
 }
 
 body {
-    /*font-size: 19px;*/
-    background-image: url('https://images-na.ssl-images-amazon.com/images/I/71wl-5bDNNL._SL1010_.jpg');
+    background-image: url('https://trello-attachments.s3.amazonaws.com/59f11cd89a44d48adf56db90/59f11dd3d7bf129d742b8fef/55e527eb43554c3225edb765465e3471/TODOSLOS_SERVICIOS_1.jpg');
     background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,7 +12,7 @@ body {
 }
 
 .layer {
-    background-color: rgba(47, 80, 116, 0.47);
+    /*background-color: rgba(47, 80, 116, 0.47);*/
     height: 100%;
 }
 
@@ -82,6 +81,17 @@ a {
 
 #featured {
     color: white;
+    width: 50%; 
+    font-style: italic; 
+}
+
+#about {
+    background-color: rgba(255, 255, 255, 0.62);
+    display: block;
+    margin: 50px auto;
+    height: 50%;
+    padding: 50px;
+    font-style: italic;
 }
 
 #featured h1 {
@@ -122,15 +132,26 @@ footer {
 }
 
 #about {
-    background-color: rgba(252, 252, 252, 0.44);
+    background-color: rgba(255, 255, 255, 0.62);
     display: block;
     margin: 50px auto;
     height: 50%;
     padding: 50px;
+    font-style: italic;
+}
+
+#about .yellow {
+    color: white;
+    font-size: 1.2em;
 }
 
 #about p {
     display: block;
+    font-size: 1.7em;
+}
+
+#about p br {
+    line-height: 2em;
 }
 
 #about .button {
