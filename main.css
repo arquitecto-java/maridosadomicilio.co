@@ -158,16 +158,50 @@ footer p {
 }
 
 @media screen and (max-width: 799px){
+    header nav {
+        position: fixed;
+        top: 70px;
+        width: 100%;
+        border: 1px solid red;
+    }
+    
     header ul {
-        display: none;
+        margin: auto;
+        padding: 0;
+        display: flex;
+        margin: 0 20px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header li {
+        height: 20px;
+        background-color: #0f2b4e;
+        display: inline-block;
+        margin: 0px;
+        background-color: #416fa8;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border-style: none;
+    }
+    
+    header li a {
+        color: white;
+        font-weight: 500;
+        font-size: 0.9em;
     }
     
     #about {
         height: 70%;
+        margin: 70px 25px;
     }
     
     #featured {
         width: 75%; 
         font-style: italic; 
     }
+    
+    #featured h1 {
+        margin: 90px 0 70px 0;
+    }  
 }
