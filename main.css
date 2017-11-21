@@ -7,6 +7,7 @@ body {
     background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #0f2b4e;
     font-family: 'Myriad Pro';
 }
@@ -98,7 +99,7 @@ a {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -108,6 +109,7 @@ footer {
 
 #about {
     background-color: rgba(255, 255, 255, 0.62);
+    background-attachment: fixed;
     display: block;
     margin: 50px auto;
     height: 50%;
@@ -159,10 +161,12 @@ footer p {
 
 @media screen and (max-width: 799px){
     header nav {
-        position: fixed;
-        top: 70px;
-        width: 100%;
-        border: 1px solid red;
+        position: absolute;
+        top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        left: -15%;
+        right: -15%;
     }
     
     header ul {
@@ -175,25 +179,35 @@ footer p {
     }
 
     header li {
-        height: 20px;
-        background-color: #0f2b4e;
-        display: inline-block;
+        display: flex;
+        width: 30%;
         margin: 0px;
-        background-color: #416fa8;
+        vertical-align: middle;
+    }
+    
+    header li a {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        background-color: #0f2b4e;
+        height: 40px;
+        color: white;
+        font-weight: 00;
+        font-size: 0.8em;
         padding: 5px 10px;
         border-radius: 5px;
         border-style: none;
     }
     
-    header li a {
-        color: white;
-        font-weight: 500;
-        font-size: 0.9em;
-    }
-    
     #about {
         height: 70%;
-        margin: 70px 25px;
+        margin: 90px 25px;
+        min-height: 100vh;
+    }
+    
+    #about .button {
+        display: inline-block;
+        margin: auto auto 60px auto;
     }
     
     #featured {
@@ -202,6 +216,6 @@ footer p {
     }
     
     #featured h1 {
-        margin: 90px 0 70px 0;
+        margin: 110px 0 30px 0;
     }  
 }
